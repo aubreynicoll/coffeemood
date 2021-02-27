@@ -5,7 +5,6 @@ module.exports = {
   entry: ['@babel/polyfill', './src/index.js'],
   output: {
     path: path.resolve(__dirname, 'build'),
-    publicPath: path.resolve(__dirname, 'public'),
     filename: 'main.js',
   },
   devServer: {
@@ -13,7 +12,7 @@ module.exports = {
     compress: true,
     port: 3000,
   },
-  devtool: 'source-map',
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
