@@ -8,6 +8,12 @@ module.exports = merge(common, {
     contentBase: path.resolve(__dirname, 'build'),
     compress: true,
     port: 3000,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3001',
+        secure: false,
+      },
+    },
   },
   devtool: 'inline-source-map',
 })
