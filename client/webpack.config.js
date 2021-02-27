@@ -1,9 +1,11 @@
 const path = require('path')
+const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: ['@babel/polyfill', './src/index.js'],
   output: {
     path: path.resolve(__dirname, 'build'),
+    publicPath: path.resolve(__dirname, 'public'),
     filename: 'main.js',
   },
   devServer: {
@@ -27,4 +29,11 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new CopyPlugin({
+      patterns: [
+        { from: path.resolve(__dirname, 'public'), to: path.resolve(__dirname, 'build') },
+      ],
+    }),
+  ],
 }
