@@ -18,12 +18,12 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         options: {
-          presets: ['@babel/preset-react', '@babel/preset-env']
+          presets: ['@babel/preset-react', '@babel/preset-env'],
         },
       },
       {
         test: /\.css$/,
-        use: ['css-loader', 'style-loader']
+        use: ['css-loader', 'style-loader'],
       },
     ],
   },

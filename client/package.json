@@ -7,12 +7,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --mode=development",
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=production",
+    "lint": "eslint ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "eslint-config-airbnb": "^18.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
