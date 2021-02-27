@@ -3,6 +3,6 @@ const express = require('express')
 // const fs = require('fs')
 const path = require('path')
 
-audioRouter.use(express.static(path.join(__dirname, '../temp')))
+audioRouter.use(express.static(path.join(__dirname, '../audio')))
 
 module.exports = audioRouter
