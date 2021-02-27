@@ -5,7 +5,7 @@ const App = () => {
     <div className="App-root">
       <div className="App-audio-container">
         <audio controls>
-          <source src="http://localhost:3001/api/audio" type="audio/mpeg" />
+          <source src="http://localhost:3001/api/audio/a.mp3" type="audio/mpeg" />
           <track kind="captions" />
         </audio>
       </div>
