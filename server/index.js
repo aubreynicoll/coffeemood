@@ -1,12 +1,11 @@
-const express = require('express')
+const http = require('http')
 
-const app = express()
+const app = require('./app')
 
-app.get('/', (req, res) => {
-  res.send('ok')
-})
+const server = http.createServer(app)
 
 const PORT = 3001
-app.listen(PORT, () => {
+server.listen(PORT, () => {
+  // eslint-disable-next-line no-console
   console.log(`listening on ${PORT}`)
 })
