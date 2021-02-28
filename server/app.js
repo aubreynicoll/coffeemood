@@ -1,14 +1,13 @@
 const express = require('express')
 const cors = require('cors')
+const path = require('path')
 const audioRouter = require('./routes/audioRouter')
 
 const app = express()
 
 app.use(cors())
 
-app.get('/', (req, res) => {
-  res.send('ok')
-})
+app.use(express.static(path.join(__dirname, 'build')))
 
 app.use('/api/audio', audioRouter)
 
