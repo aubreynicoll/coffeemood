@@ -10,5 +10,8 @@ app.use(cors())
 app.use(express.static(path.join(__dirname, 'build')))
 
 app.use('/api/audio', audioRouter)
+app.get('/health', (req, res) => {
+  res.send('OK')
+})
 
 module.exports = app
