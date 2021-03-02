@@ -10,7 +10,10 @@ const App = () => {
         </audio>
       </div>
       <header>
-        <h1>Coffee Mood&trade;</h1>
+        <h1>
+          Coffee Mood
+          <span id="trademark">&trade;</span>
+        </h1>
         <p>
           Café Sounds for Focus &amp; Study
         </p>
