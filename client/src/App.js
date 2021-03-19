@@ -9,6 +9,15 @@ const App = () => {
           <track kind="captions" />
         </audio>
       </div>
+      <header>
+        <h1>
+          Coffee Mood
+          <span id="trademark">&trade;</span>
+        </h1>
+        <p>
+          Café Sounds for Focus &amp; Study
+        </p>
+      </header>
     </div>
   )
 }
