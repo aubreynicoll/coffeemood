@@ -14,7 +14,7 @@ While the app itself is quite simple, I'm taking the opportunity to explore a fe
 * Express
 * CSS
 * Webpack
-* React Native (Coming Soon!)
+* [React Native](https://github.com/aubreynicoll/coffeemood-native)
 
 ## Features
 Science has shown that small distractions, such as those that might occur in a busy cafeteria, can help enable diffuse thought patterns. This app helps simulate that environment by providing recorded audio.
